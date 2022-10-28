@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Pirata+One:400");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Antique-Map-Desktop-Wallpaper.jpg");
+  background-attachment: fixed;
+  font-family: "Pirata One", sans-serif;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.menu {
+  color: rgb(34, 34, 34);
+  background: rgba(255, 255, 255, 0.496);
+  border-radius: 4px;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+h1 {
+  text-align: center;
+  padding-top: 1rem;
+}
+.text-underline {
+  width: 5rem;
+  height: 0.3rem;
+  background-color: crimson;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-container {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+.filter-btn {
+  text-transform: capitalize;
+  padding: 0.375rem 0.75rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: crimson;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.filter-btn:hover {
+  border-color: white;
+  color: white;
+}
+.section-center {
+  padding: 0 2rem;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .section-center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.item {
+  max-width: 20rem;
+}
+
+.item .img {
+  height: 190px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+h2 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+h4 {
+  margin-bottom: 1rem;
+  color: crimson;
+}
